@@ -27,4 +27,4 @@ python version/src.py -f src/rtasp/_version.py
 python changelog.py
 #python increment.py
 bash git.sh
-bash publish.sh
+bash ./script/publish.sh
