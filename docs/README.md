@@ -1,34 +1,30 @@
-# rtasp
-rtasp.rtasp.com
+# [RTASP - Real-Time Annotation and Stream Processing](http://www.rtasp.com)
 
-# rtasp
+RTASP to modularny system do wykrywania, przetwarzania i analizy strumieni wideo w czasie rzeczywistym. System umożliwia łatwą integrację z kamerami IP, mikrofonami i innymi źródłami sygnału, a także zapewnia zaawansowane możliwości adnotacji i analizy przy użyciu modułów AI.
 
-rtasp is a lightweight programming language embedded in Markdown that runs across multiple platforms including web browsers, terminal environments, desktop applications, and mobile devices.
+## Główne funkcje
 
-## What is rtasp?
+- **Automatyczne wykrywanie kamer RTSP** w sieci lokalnej
+- **Zarządzanie strumieniami wideo** z różnych źródeł
+- **Przetwarzanie AI** (wykrywanie ruchu, obiektów, twarzy, rozpoznawanie mowy)
+- **Interfejs webowy** do zarządzania systemem
+- **Protokół komunikacyjny MCP** (Message Communication Protocol) do integracji modułów
+- **Nagrywanie i wykonywanie zrzutów ekranu**
+- **Modułowa architektura** umożliwiająca łatwe rozszerzanie funkcjonalności
 
-rtasp allows you to write both documentation and executable code in the same Markdown file. Code blocks tagged with ```rtasp are interpreted and executed by the rtasp runtime.
+## Szybka instalacja
 
-## Key Features
+Aby zainstalować RTASP na systemie Debian/Ubuntu/Raspberry Pi OS, wykonaj następującą komendę:
 
-- **Write Once, Run Anywhere**: The same rtasp code works across all supported platforms
-- **Embedded in Markdown**: Combine documentation and executable code in a single file
-- **Platform-Specific APIs**: Access platform capabilities like file system, device sensors, etc.
-- **Interactive Documents**: Create dynamic, interactive documentation
-- **Easy to Learn**: Familiar JavaScript-like syntax
+```bash
+curl -sSL https://raw.githubusercontent.com/rt-asp/python/main/scripts/quick-install.sh | sudo bash
+```
 
-## Platform Implementation Guide
+System zostanie zainstalowany w katalogu `/opt/rtasp` i uruchomiony jako usługa systemd.
 
-### Browser Implementation
+## Wymagania systemowe
 
-The browser implementation uses JavaScript to interpret and execute rtasp code. It consists of:
-
-1. An HTML file that provides the editor interface
-2. A JavaScript interpreter that extracts code blocks and executes them
-3. DOM manipulation capabilities for UI rendering
-
-**Running in Browser:**
-1. Open `index.html` in any modern browser
-2. Write your rtasp code in the editor
-3. Click "Run" to execute
-
+- Python 3.8 lub nowszy
+- System operacyjny: Debian, Ubuntu, Raspberry Pi OS (lub inny oparty na Linuxie)
+- Minimum 2GB RAM (4GB zalecane)
+- Minimum 1GB wolnego miejsca na dysku (więcej w przypadku nagrywania strumieni)
